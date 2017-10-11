@@ -1,0 +1,418 @@
+@font-face {
+  font-family: "KaushanScript";
+  src: url('../fonts/KaushanScript-Regular.otf');
+}
+
+@font-face {
+  font-family: "segoeui";
+  src: url('../fonts/segoeui.ttf');
+}
+
+@font-face {
+  font-family: "seguibli";
+  src: url('../fonts/seguibli.ttf');
+}
+
+@font-face {
+  font-family: "seguili";
+  src: url('../fonts/seguili.ttf');
+}
+
+@font-face {
+  font-family: "seguisli";
+  src: url('../fonts/seguisli.ttf');
+}
+
+@font-face {
+  font-family: "segoeuii";
+  src: url('../fonts/segoeuii.ttf');
+}
+
+@font-face {
+  font-family: "seguisbi";
+  src: url('../fonts/seguisbi.ttf');
+}
+
+html {
+  font-family: sans-serif; 
+  line-height: 1.15; 
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+
+body {
+  margin: 0;
+  font-family: "segoeui";
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box; 
+  height: 0; 
+  overflow: visible; 
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em; 
+}
+
+a {
+  background-color: transparent; 
+  -webkit-text-decoration-skip: objects; 
+}
+
+a:active, a:hover, a:focus, a:visited{
+  outline-width: 0;
+  text-decoration: none;
+  outline: none;
+}
+abbr[title] {
+  border-bottom: none; 
+  text-decoration: underline; 
+  text-decoration: underline dotted; 
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; 
+  font-size: 1em; 
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; 
+  font-size: 100%;
+  line-height: 1.15; 
+  margin: 0; 
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select { 
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; 
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%; 
+  padding: 0; 
+  white-space: normal;
+}
+
+progress {
+  display: inline-block; 
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#colorbox{overflow:visible!important;} 
+
+
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center
+}
+
+#LG_panel, #LG_titleBar{display:none;}
+#LG_container{border: 0px!important; background: transparent!important;}
+
+#main-menu{
+  width: 100%;
+  text-align: center;
+  min-height: 90px;
+}
+
+#logo{
+  font-family: "KaushanScript";
+  font-size: 36px;
+}
+
+.tel{
+  font-family: "KaushanScript";
+  font-size: 18px;
+  color: #3d3d3d;
+  letter-spacing: 1px;
+}
+
+#wrapper{
+
+}
+
+.hamburger{
+  display: none;
+}
+
+#menu{
+  margin: 20px 0px 0px;
+  padding: 0px;
+}
+
+#menu li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+#menu li a{
+  font-family: "seguisbi";
+  font-size: 21px;
+  color: #3d3d3d;
+  position: relative;
+  padding: 5px 0px;
+
+}
+
+.buyit{
+  border: 2px solid #ffed00;
+  font-family: "seguisbi";
+  font-size: 21px;
+  color: #3d3d3d;
+  position: relative;
+  padding: 5px 10px 10px;
+  display: inline-block;
+  margin: 10px auto;
+} 
+
+#menu li a:hover::after, #menu li a:focus::after {
+  height: 2px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+#menu li a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #3d3d3d;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
